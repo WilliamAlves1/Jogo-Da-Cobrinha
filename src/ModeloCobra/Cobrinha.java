@@ -22,10 +22,10 @@ public class Cobrinha {
         int proximoY = cabecaAtual.getY();
 
         switch (direcao) {
-            case 0 -> proximoY--;
-            case 1 -> proximoX++;
-            case 2 -> proximoY++;
-            case 3 -> proximoX--;
+            case 0 -> proximoY--; //cima
+            case 1 -> proximoX++; //direita
+            case 2 -> proximoY++; //baixo
+            case 3 -> proximoX--; //esquerda
         }
 
         if (colidiuComParede(proximoX, proximoY) || colidiuComCorpo(proximoX, proximoY)) {
