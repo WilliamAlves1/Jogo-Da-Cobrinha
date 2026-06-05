@@ -1,10 +1,10 @@
 package br.edu.control;
 
-import Modelo.Cobrinha;
-import Modelo.Comida;
+import model.Cobrinha;
+import model.Comida;
 import CobraListaEncadeada.No;
-import Modelo.Jogador;
-import Modelo.Ranking;
+import model.Jogador;
+import model.Ranking;
 import br.edu.view.GamePanel;
 
 import javax.swing.*;

@@ -1,7 +1,7 @@
 package br.edu.view;
 
-import Modelo.Cobrinha;
-import Modelo.Comida;
+import model.Cobrinha;
+import model.Comida;
 import CobraListaEncadeada.No;
 
 import javax.swing.JButton;

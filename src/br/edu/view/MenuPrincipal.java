@@ -1,8 +1,8 @@
 package br.edu.view;
 
-import Modelo.Cobrinha;
-import Modelo.Comida;
-import Modelo.Ranking;
+import model.Cobrinha;
+import model.Comida;
+import model.Ranking;
 import br.edu.control.GerenciadorJogo;
 
 import javax.swing.*;

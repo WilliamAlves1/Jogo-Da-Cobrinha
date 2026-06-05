@@ -1,4 +1,4 @@
-package Modelo;
+package model;
 
 import CobraListaEncadeada.EstruturaCobra;
 import CobraListaEncadeada.No;

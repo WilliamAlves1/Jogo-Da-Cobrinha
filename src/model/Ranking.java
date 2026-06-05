@@ -1,4 +1,4 @@
-package Modelo;
+package model;
 
 public class Ranking {
     private Jogador[] jogadores = new Jogador[10];
