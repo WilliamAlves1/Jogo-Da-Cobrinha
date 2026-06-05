@@ -19,7 +19,7 @@ public class GamePanel extends JPanel {
         this.cobrinha = cobrinha;
         this.comida = comida;
 
-        this.setPreferredSize(new Dimension(600, 600));
+        this.setPreferredSize(new Dimension(700, 700));
         this.setBackground(Color.BLACK);
         this.setFocusable(true);
     } 
@@ -61,8 +61,8 @@ public class GamePanel extends JPanel {
             int larguraQuadrado = 300;
             int alturaQuadrado = 150;
 
-            int xQuadrado = (600 - larguraQuadrado) / 2;
-            int yQuadrado = (600 - alturaQuadrado) / 2;
+            int xQuadrado = (700 - larguraQuadrado) / 2;
+            int yQuadrado = (700 - alturaQuadrado) / 2;
 
             g.setColor(Color.BLACK);
             g.fillRect(xQuadrado, yQuadrado, larguraQuadrado, alturaQuadrado);
