@@ -1,7 +1,8 @@
 package br.edu.view;
-import ModeloCobra.Cobrinha;
-import ModeloCobra.Comida;
-import ModeloCobra.Ranking;
+
+import Modelo.Cobrinha;
+import Modelo.Comida;
+import Modelo.Ranking;
 import br.edu.control.GerenciadorJogo;
 
 import javax.swing.*;
@@ -69,6 +70,9 @@ public class MenuPrincipal extends JFrame {
             public void actionPerformed(ActionEvent e) {
                 setVisible(false); // esconde o menu
 
+                // montando a janela q vai exibir o jogo
+                JFrame janelaDoJogo = new JFrame();
+
                 // instanciando os elementos essenciais do jogo, passando o corpo da cobra para a comida
                 Cobrinha cobrinha = new Cobrinha();
                 Comida comida = new Comida(cobrinha.getCorpo());
@@ -77,13 +81,11 @@ public class MenuPrincipal extends JFrame {
                 GamePanel painelJogo = new GamePanel(cobrinha, comida);
 
                 // gerenciador do jogo com todos os parãmetros necessários
-                br.edu.control.GerenciadorJogo gerenciadorJogo = new GerenciadorJogo(cobrinha, comida, painelJogo, ranking);
+                GerenciadorJogo gerenciadorJogo = new GerenciadorJogo(cobrinha, comida, painelJogo, ranking, janelaDoJogo, MenuPrincipal.this);
 
                 // conectando o teclado ao painel do jogo
                 painelJogo.addKeyListener(gerenciadorJogo);
 
-                // montando a janela q vai exibir o jogo
-                JFrame janelaDoJogo = new JFrame();
                 janelaDoJogo.add(painelJogo);
                 janelaDoJogo.setTitle("Snake Game");
                 janelaDoJogo.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -109,7 +111,7 @@ public class MenuPrincipal extends JFrame {
                 // campo para pedir a senha e deixar (***)
                 JPasswordField campoSenha = new JPasswordField();
 
-                /*  agrupa o texto e o campo de senha em um array de objetos, permitindo que fiquem empilhados
+                /* agrupa o texto e o campo de senha em um array de objetos, permitindo que fiquem empilhados
                 dentro do joptionpane
                  */
                 Object[] mensagemECampoSenha = {
@@ -143,7 +145,7 @@ public class MenuPrincipal extends JFrame {
                                     3 - Resetar Ranking
                                     4 - Visualizar Ranking
                                     """,
-                                    "Menu do Administrador", JOptionPane.QUESTION_MESSAGE);
+                            "Menu do Administrador", JOptionPane.QUESTION_MESSAGE);
                     if(opcao == null){ return; }
 
                     // 1 - editar o nome do usuário
@@ -168,7 +170,6 @@ public class MenuPrincipal extends JFrame {
                         } catch (NumberFormatException ex){
                             JOptionPane.showMessageDialog(null, "Digite um número válido na posição.");
                         }
-
                     }
 
                     // 2 - Remover jogador
@@ -210,5 +211,4 @@ public class MenuPrincipal extends JFrame {
             }
         });
     }
-
 }

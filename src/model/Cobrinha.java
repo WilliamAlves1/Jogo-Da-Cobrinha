@@ -1,11 +1,11 @@
-package ModeloCobra;
+package Modelo;
 
 import CobraListaEncadeada.EstruturaCobra;
 import CobraListaEncadeada.No;
 
 public class Cobrinha {
-    private static final int LARGURA_TELA = 20;
-    private static final int ALTURA_TELA = 20;
+    private static final int LARGURA_TELA = 35;
+    private static final int ALTURA_TELA = 35;
 
     private EstruturaCobra corpo;
     private boolean viva;

@@ -1,4 +1,4 @@
-import ModeloCobra.Ranking;
+import model.Ranking;
 import br.edu.view.MenuPrincipal;
 
 public class Main {

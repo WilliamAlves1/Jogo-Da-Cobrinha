@@ -1,4 +1,4 @@
-package ModeloCobra;
+package model;
 
 public class Jogador {
     private String nome;

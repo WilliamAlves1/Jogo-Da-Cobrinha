@@ -1,9 +1,10 @@
 package br.edu.view;
 
-import ModeloCobra.Cobrinha;
-import ModeloCobra.Comida;
+import Modelo.Cobrinha;
+import Modelo.Comida;
 import CobraListaEncadeada.No;
 
+import javax.swing.JButton;
 import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -14,6 +15,7 @@ public class GamePanel extends JPanel {
     private final int TAMANHO_BLOCO = 20;
     private Cobrinha cobrinha;
     private Comida comida;
+    private JButton btnVoltarMenu;
 
     public GamePanel(Cobrinha cobrinha, Comida comida) {
         this.cobrinha = cobrinha;
@@ -22,7 +24,18 @@ public class GamePanel extends JPanel {
         this.setPreferredSize(new Dimension(700, 700));
         this.setBackground(Color.BLACK);
         this.setFocusable(true);
-    } 
+        this.setLayout(null);
+
+        btnVoltarMenu = new JButton("Voltar ao Menu");
+        btnVoltarMenu.setBounds(275, 450, 150, 40);
+        btnVoltarMenu.setVisible(false);
+        btnVoltarMenu.setFocusable(false);
+        this.add(btnVoltarMenu);
+    }
+
+    public JButton getBtnVoltarMenu() {
+        return btnVoltarMenu;
+    }
 
     @Override
     protected void paintComponent(Graphics g) {

@@ -1,4 +1,4 @@
-package ModeloCobra;
+package Modelo;
 
 import CobraListaEncadeada.EstruturaCobra;
 import CobraListaEncadeada.No;
@@ -6,8 +6,8 @@ import CobraListaEncadeada.No;
 import java.util.Random;
 
 public class Comida {
-    private static final int LARGURA_TELA = 20;
-    private static final int ALTURA_TELA = 20;
+    private static final int LARGURA_TELA = 35;
+    private static final int ALTURA_TELA = 35;
 
     private int x;
     private int y;

@@ -1,5 +1,4 @@
-package ModeloCobra;
-import ModeloCobra.Jogador;
+package Modelo;
 
 public class Ranking {
     private Jogador[] jogadores = new Jogador[10];
@@ -102,6 +101,4 @@ public class Ranking {
 
         return textoRanking;
     }
-
-
 }
