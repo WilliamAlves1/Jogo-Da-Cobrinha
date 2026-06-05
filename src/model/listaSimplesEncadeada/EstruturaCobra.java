@@ -1,4 +1,4 @@
-package CobraListaEncadeada;
+package model.listaSimplesEncadeada;
 
 public class EstruturaCobra {
     private No cabeca;

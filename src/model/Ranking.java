@@ -4,10 +4,6 @@ public class Ranking {
     private Jogador[] jogadores = new Jogador[10];
 
     public Ranking() {
-        // Dados de teste
-        cadastrarJogador(new Jogador("Mauricio", 50));
-        cadastrarJogador(new Jogador("Anna", 35));
-        cadastrarJogador(new Jogador("João", 42));
     }
 
     // percorre o vetor e na primeira posição nula que encontra, adiciona o novo jogador

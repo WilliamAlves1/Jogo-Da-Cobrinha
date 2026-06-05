@@ -1,7 +1,7 @@
 package model;
 
-import CobraListaEncadeada.EstruturaCobra;
-import CobraListaEncadeada.No;
+import model.listaSimplesEncadeada.EstruturaCobra;
+import model.listaSimplesEncadeada.No;
 
 public class Cobrinha {
     private static final int LARGURA_TELA = 35;

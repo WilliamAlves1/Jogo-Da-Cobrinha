@@ -2,7 +2,7 @@ package br.edu.control;
 
 import model.Cobrinha;
 import model.Comida;
-import CobraListaEncadeada.No;
+import model.listaSimplesEncadeada.No;
 import model.Jogador;
 import model.Ranking;
 import br.edu.view.GamePanel;

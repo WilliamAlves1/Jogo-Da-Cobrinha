@@ -108,12 +108,8 @@ public class MenuPrincipal extends JFrame {
         btnAreaAdm.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // campo para pedir a senha e deixar (***)
                 JPasswordField campoSenha = new JPasswordField();
 
-                /* agrupa o texto e o campo de senha em um array de objetos, permitindo que fiquem empilhados
-                dentro do joptionpane
-                 */
                 Object[] mensagemECampoSenha = {
                         "Digite a senha do Administrador: ",
                         campoSenha
@@ -128,13 +124,10 @@ public class MenuPrincipal extends JFrame {
                         null, null, null
                 );
 
-                // se fechar a janela ou cancelar, interrompe o acesso
                 if (janelaSenhaAdm != JOptionPane.OK_OPTION) { return; }
 
-                // pegando a senha digitada pelo usuário
                 String senha = new String(campoSenha.getPassword());
 
-                // validação da senha
                 if("adminjogo123".equals(senha)){
                     // se a senha estiver correta, exibe o menu de administrador
                     String opcao = JOptionPane.showInputDialog(null,

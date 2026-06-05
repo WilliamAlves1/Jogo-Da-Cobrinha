@@ -2,7 +2,7 @@ package br.edu.view;
 
 import model.Cobrinha;
 import model.Comida;
-import CobraListaEncadeada.No;
+import model.listaSimplesEncadeada.No;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
