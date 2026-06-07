@@ -1,7 +1,7 @@
-package model;
+package br.edu.model;
 
-import model.listaSimplesEncadeada.EstruturaCobra;
-import model.listaSimplesEncadeada.No;
+import br.edu.model.listaSimplesEncadeada.EstruturaCobra;
+import br.edu.model.listaSimplesEncadeada.No;
 
 import java.util.Random;
 

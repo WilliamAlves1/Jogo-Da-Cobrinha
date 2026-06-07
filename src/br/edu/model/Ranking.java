@@ -1,4 +1,4 @@
-package model;
+package br.edu.model;
 
 public class Ranking {
     private Jogador[] jogadores = new Jogador[10];
@@ -78,7 +78,7 @@ public class Ranking {
 
     // método de exibir o ranking como string (pro optionpane conseguir receber)
     public String exibirRankingString(){
-        ordenarRanking();;
+        ordenarRanking();
 
         String textoRanking = "Placar de Recordes\n\n";
         boolean vazio = true;

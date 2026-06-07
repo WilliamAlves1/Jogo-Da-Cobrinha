@@ -1,4 +1,4 @@
-package model.listaSimplesEncadeada;
+package br.edu.model.listaSimplesEncadeada;
 
 public class No {
 

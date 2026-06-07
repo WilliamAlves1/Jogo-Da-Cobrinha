@@ -1,4 +1,4 @@
-import model.Ranking;
+import br.edu.model.Ranking;
 import br.edu.view.MenuPrincipal;
 
 public class Main {

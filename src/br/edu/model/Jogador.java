@@ -1,4 +1,4 @@
-package model;
+package br.edu.model;
 
 public class Jogador {
     private String nome;
@@ -29,3 +29,5 @@ public class Jogador {
         this.maiorPontuacao = maiorPontuacao;
     }
 }
+
+

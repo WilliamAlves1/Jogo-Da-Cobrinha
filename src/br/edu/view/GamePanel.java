@@ -1,8 +1,8 @@
 package br.edu.view;
 
-import model.Cobrinha;
-import model.Comida;
-import model.listaSimplesEncadeada.No;
+import br.edu.model.Cobrinha;
+import br.edu.model.Comida;
+import br.edu.model.listaSimplesEncadeada.No;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
